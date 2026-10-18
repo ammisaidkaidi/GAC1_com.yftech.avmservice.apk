@@ -1,0 +1,3 @@
+# Ignore files that are too large or binary-only
+*.dex
+*.apk.bak

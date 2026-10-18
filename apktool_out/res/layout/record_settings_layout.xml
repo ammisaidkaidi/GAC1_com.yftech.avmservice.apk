@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#66666666" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="290.0dp" android:layout_height="50.0dp">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="@string/duration" />
+        <Spinner android:id="@id/spinner_duration" android:layout_width="220.0dp" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="300.0dp" android:layout_height="50.0dp">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/tv_resolution" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="@string/resolution" />
+        <Spinner android:id="@id/spinner_resolution" android:layout_width="220.0dp" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

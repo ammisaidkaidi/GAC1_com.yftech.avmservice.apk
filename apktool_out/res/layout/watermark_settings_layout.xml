@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#66666666" android:layout_width="600.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <TextView android:gravity="center_horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/startx" android:layout_weight="2.0" />
+        <TextView android:gravity="center_horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/starty" android:layout_weight="2.0" />
+        <TextView android:gravity="center_horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/width" android:layout_weight="2.0" />
+        <TextView android:gravity="center_horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/height" android:layout_weight="2.0" />
+        <TextView android:gravity="center_horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/on_off" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/preview" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/preview_x_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/preview_startx" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="20" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/preview_x_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/preview_y_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/preview_starty" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="20" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/preview_y_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/preview_width_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/preview_width" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="300" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/preview_width_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/preview_height_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/preview_height" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="50" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/preview_height_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <Button android:id="@id/preview_watermark_switch" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/is_off" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/record" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/record_x_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/record_startx" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="20" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/record_x_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/record_y_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/record_starty" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="20" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/record_y_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/record_width_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/record_width" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="300" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/record_width_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/record_height_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/record_height" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="50" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/record_height_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <Button android:id="@id/record_watermark_switch" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/is_off" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/snapshot" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/snapshot_x_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/snapshot_startx" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="20" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/snapshot_x_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/snapshot_y_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/snapshot_starty" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="20" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/snapshot_y_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/snapshot_width_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/snapshot_width" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="300" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/snapshot_width_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/snapshot_height_minus" android:background="@drawable/ic_minus" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <EditText android:id="@id/snapshot_height" android:focusable="false" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="50" android:editable="false" android:inputType="number" />
+            <Button android:id="@id/snapshot_height_add" android:background="@drawable/ic_add" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        </LinearLayout>
+        <Button android:id="@id/snapshot_watermark_switch" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/is_off" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>
